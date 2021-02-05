@@ -63,6 +63,7 @@ def make_text(chains):
     return ' '.join(words)
 
 
+    
 input_path = 'green-eggs.txt'
 
 # Open the file and turn it into one long string
@@ -75,3 +76,24 @@ chains = make_chains(input_text)
 random_text = make_text(chains)
 
 print(random_text)
+
+
+
+
+
+
+
+
+
+    # words = []
+    # current_key = ("could", "you")
+    # for word in current_key:
+    #     words.append(word)
+
+    # while current_key in chains: 
+    #     chosen_word = choice(chains[current_key])
+    #     new_key = (current_key[1], chosen_word)
+    #     words.append(chosen_word)
+    #     current_key = new_key
+
+    # return " ".join(words)
