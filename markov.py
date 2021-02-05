@@ -53,25 +53,25 @@ def make_chains(text_string):
     return chains
 
 
-# def make_text(chains):
-#     """Return text from chains."""
+def make_text(chains):
+    """Return text from chains."""
 
-#     words = []
+    words = []
+    our_string = "could you in"
+    current_key = chains.choice()
 
-#     # your code goes here
-
-#     return ' '.join(words)
+    return ' '.join(words)
 
 
-# input_path = 'green-eggs.txt'
+input_path = 'green-eggs.txt'
 
-# # Open the file and turn it into one long string
-# input_text = open_and_read_file(input_path)
+# Open the file and turn it into one long string
+input_text = open_and_read_file(input_path)
 
-# # Get a Markov chain
-# chains = make_chains(input_text)
+# Get a Markov chain
+chains = make_chains(input_text)
 
-# # Produce random text
-# random_text = make_text(chains)
+# Produce random text
+random_text = make_text(chains)
 
-# print(random_text)
+print(random_text)
