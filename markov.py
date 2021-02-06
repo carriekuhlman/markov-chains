@@ -56,14 +56,24 @@ def make_chains(text_string):
 def make_text(chains):
     """Return text from chains."""
 
+    #create variable for initial tuple (the "link")
+    #add each word in our_string to the words list
+    #create a while our_string is in chains
+        #adding the randomly chosen value to words list
+        #creating new variable for our_string with last item in tuple and random value 
     words = []
-    our_string = "could you in"
-    current_key = chains.choice()
+    our_string = ("could", "you")
+    # current_key = chains.choice()
+    for word in our_string: 
+        words.append(word)
 
+    while our_string in chains:
+        random_word = choice(chains[our_string])
+        words.append(random_word)
+        our_string = (our_string[1], random_word)
+        
     return ' '.join(words)
-
-
-    
+   
 input_path = 'green-eggs.txt'
 
 # Open the file and turn it into one long string
