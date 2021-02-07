@@ -62,7 +62,9 @@ def make_text(chains):
         #adding the randomly chosen value to words list
         #creating new variable for our_string with last item in tuple and random value 
     words = []
-    our_string = ("could", "you")
+    word_pair, single_word = choice(list(chains.items()))
+    our_string = word_pair
+
     # current_key = chains.choice()
     for word in our_string: 
         words.append(word)
